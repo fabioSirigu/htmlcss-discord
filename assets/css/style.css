@@ -1,0 +1,286 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: 'Padauk', sans-serif;
+}
+
+/* #region utilities */
+
+.container {
+      width: 80%;
+      max-width: 1200px;
+      margin:0 auto;
+}
+
+.row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+}
+
+.col-2 {
+      width: calc(( 100% / 12) * 2);
+}
+
+.col-4 {
+      width: calc(( 100% / 12) * 4);
+}
+.col-8 {
+      width: calc(( 100% / 12) * 8);
+      text-align: center;
+}
+
+button:hover {
+      cursor: pointer;
+}
+
+/* #endregion utilities */
+
+/* #region header */
+header {
+      background-image: url(../img/jumbo.png);
+      color: white;
+      padding: 20px 0px;
+}
+
+#site_header .logo {
+      text-align: left;
+}
+
+.logo {
+      width: 100px;
+}
+
+a {
+      color: white;
+      text-decoration: none;
+      padding: 20px;
+}
+
+.links a:hover {
+      text-decoration: underline;
+}
+
+.col-2 > button {
+      padding: 0.3rem 0.8rem;
+      border-radius: 1rem;
+      border: none;
+      text-align: right;
+}
+
+#site_header .row .col-2:last-child {
+      text-align: right;
+}
+/* #endregion header */
+
+/*  #region main */
+
+/* #region jumbo */
+
+.jumbo {
+      height: 600px;
+      background-image: url(../img/jumbo.png);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+}
+
+.jumbo > .container {
+      width: 30%;
+      text-align: center;
+      color: white;
+}
+
+h1 {
+      font-size: 48px;
+      font-family: 'Padauk', sans-serif;
+      font-weight: 700;
+      padding-bottom: 2rem;
+}
+
+.container > p {
+      font-size: 1.2rem;
+}
+
+.download_button button {
+      border: none;
+      border-radius: 2rem;
+      font-size: 1.2rem;
+      padding: 1rem 1.5rem;
+      margin: 0.8rem 1rem;
+}
+
+.download_button button:hover {
+      color: white;
+      background-color: #23272A;
+}
+
+/* #endregion jumbo */
+
+.bg_section .row {
+      padding: 5rem 0;
+}
+.col-4 > h2 {
+      font-size: 3rem;
+      text-align: left;
+}
+
+.col-4 > p {
+      font-size: 1rem;
+      text-align: left;
+}
+
+.second {
+      background-color: #E4E4E4;
+}
+
+/* #region waves */
+
+svg {
+      margin-bottom: -10px;
+}
+.waves_gray > path{
+      fill: #E4E4E4;
+}
+
+.waves_white {
+      background-color: #E4E4E4;
+}
+.waves_white > path{
+      fill: white;
+}
+
+.bg_waves {
+      background-color: #E4E4E4;
+}
+
+/* #endregion waves */
+
+.news {
+      text-align: center;
+      margin: auto;
+}
+
+.news > div {
+      width: 80%;
+      margin: auto;
+}
+
+.news h2 {
+      font-size: 3rem;
+}
+
+.news > img {
+      padding: 2rem 0;
+      width: 100%;
+}
+
+.ready_to {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+     
+}
+h3 {
+      font-size: xxx-large;
+      font-weight: 700;
+      background-image: url(../img/stars.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 2rem 0;
+}
+
+.ready_to button {
+      border: none;
+      border-radius: 2rem;
+      font-size: 1.2rem;
+      padding: 0.8rem 1.8rem;
+      margin: 2rem;
+      color: white;
+      background-color: #7289DA;
+      ;
+}
+
+.ready_to button:hover {
+      color: white;
+      background-color: #23272A;
+}
+
+.utilities {
+      background-color: #23272A;
+}
+.utilities h3 {
+      background: none;
+      color: #7289DA;
+}
+
+.logo_ita {
+      width: 1.5rem;
+}
+
+#language {
+      background: none;
+      border: none;
+      cursor: pointer; 
+      color: white;     
+}
+
+.social i {
+      font-size: 1.5rem;
+      padding: 0.6rem;
+      color: white;
+}
+.contact {
+      padding: 3rem 0;
+}
+.contact h4 {
+      color: #7289DA;
+      font-size: 1.5rem;
+}
+
+.contact div {
+      color: white;
+      font-size: 1rem;
+}
+/*  #endregion main */
+
+/* #region footer */
+
+#site_footer {
+      background-color: #23272A;
+      
+}
+#site_footer > .container {
+      border-top: 1px solid #7289DA;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0;
+}
+
+#site_footer .logo {
+      width: 20%;
+}
+#site_footer button {
+      border: none;
+      border-radius: 2rem;
+      font-size: 1rem;
+      padding: 1rem 1.5rem;
+      margin: 0.8rem 1rem;
+      color: white;
+      background-color: #7289DA;
+}
+
+#site_footer button:hover {
+      color: white;
+      background-color: #23272A;
+      cursor: pointer;
+      border: 1px solid #7289DA;
+}
+
+/* #endregion footer */
