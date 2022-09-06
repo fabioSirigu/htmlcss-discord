@@ -25,13 +25,17 @@ body {
 .row_main {
       gap: 1rem;
       justify-content: center;
+      margin: 2rem 0;
 }
 
 .row_main > h1 {
       text-align: center;
-      font-weight: 700;
-      font-size: xx-large;
+      font-family: 'Rubik Mono One', sans-serif;
+      font-size: 2.2rem;
+      line-height: 1.6rem;
+      padding: 3rem 0;
 }
+
 .col-2 {
       width: calc(( 100% / 12) * 2);
 }
@@ -39,10 +43,16 @@ body {
 .col-3 {
       width: calc(( 100% / 12) * 3);
       text-align: center;
-      padding: 3rem;
-      border-radius: 2rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      color: white;
+      transition: 1s ease-out;
 }
 
+.col-3 h5 {
+      padding: 1rem 0;
+
+}
 .col-4 {
       width: calc(( 100% / 12) * 4);
 }
@@ -74,9 +84,28 @@ button:hover {
 }
 
 .item_3 {
-      background: linear-gradient(142.53deg,#00a295,#26e8f4 98.75%),#3dcda7;
+      background: linear-gradient(138.46deg,#3e70ff 1.48%,#9a98ff 98.75%),#ff73fa;
 }
 
+.col-3 img  {
+      width: 60%;
+}
+
+.col-3:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+      
+}
+.item_4 {
+      background: linear-gradient(141.85deg,#7e7bff,#ff73fa);
+}
+.item_5 {
+      background: linear-gradient(141.48deg,#f837ee 1.35%,#ffcd4b);
+}
+
+.item_6 {
+      background: linear-gradient(321.73deg,#ffcd4b -1.09%,#ee6315 100.65%);
+}
 /* #endregion utilities */
 
 /* #region header */
@@ -176,70 +205,15 @@ a {
 
 /* #endregion jumbo */
 
-.bg_section .row {
-      padding: 5rem 0;
-}
-.col-4 > h2 {
-      font-size: 3rem;
-      text-align: left;
-}
-
-.col-4 > p {
-      font-size: 1rem;
-      text-align: left;
-}
-
-.second {
-      background-color: #E4E4E4;
-}
-
-/* #region waves */
-
-svg {
-      margin-bottom: -10px;
-}
-.waves_gray > path{
-      fill: #E4E4E4;
-}
-
-.waves_white {
-      background-color: #E4E4E4;
-}
-.waves_white > path{
-      fill: white;
-}
-
-.bg_waves {
-      background-color: #E4E4E4;
-}
-
-/* #endregion waves */
-
-.news {
+.buy {
       text-align: center;
-      margin: auto;
+      margin: 2rem 0;
 }
 
-.news > div {
-      width: 80%;
-      margin: auto;
+.buy button:hover {
+      box-shadow: 5px 10px 8px #888888;
 }
 
-.news h2 {
-      font-size: 3rem;
-}
-
-.news > img {
-      padding: 2rem 0;
-      width: 100%;
-}
-
-.ready_to {
-      width: 80%;
-      margin: auto;
-      text-align: center;
-     
-}
 h3 {
       font-size: xxx-large;
       font-weight: 700;
@@ -249,25 +223,10 @@ h3 {
       padding: 2rem 0;
 }
 
-.ready_to button {
-      border: none;
-      border-radius: 2rem;
-      font-size: 1.2rem;
-      padding: 0.8rem 1.8rem;
-      margin: 2rem;
-      color: white;
-      background-color: #7289DA;
-      ;
-}
-
-.ready_to button:hover {
-      color: white;
-      background-color: #23272A;
-}
-
 .utilities {
       background-color: #23272A;
 }
+
 .utilities h3 {
       background: none;
       color: #7289DA;
